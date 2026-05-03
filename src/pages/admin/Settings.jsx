@@ -112,7 +112,7 @@ function GeneralForm({ data, onChange, onSave }) {
       <Field label="Endereço"><input value={data.storeAddress ?? ''} onChange={(e) => set('storeAddress', e.target.value)} className={inputCls} /></Field>
       <hr className="border-urban-border my-2" />
       <Row>
-        <Field label="WhatsApp do checkout (com DDI 55)" hint="Ex: 5522981605315">
+        <Field label="WhatsApp do checkout (com DDI 55)" hint="Ex: 5511999999999">
           <input value={data.whatsappNumber ?? ''} onChange={(e) => set('whatsappNumber', e.target.value)} className={inputCls} />
         </Field>
         <Field label="Frete grátis acima de (R$)">

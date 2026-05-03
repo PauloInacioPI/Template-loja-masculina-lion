@@ -17,7 +17,7 @@ const DEFAULTS = {
     storePhone: '(11) 4002-8922',
     storeAddress: '',
     cnpj: '',
-    whatsappNumber: '5522981605315',
+    whatsappNumber: '5511999999999',
     freeShippingAt: 299,
     flatShipping: 19.90,
     pixDiscountPercent: 10,

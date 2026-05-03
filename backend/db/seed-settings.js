@@ -13,7 +13,7 @@ const SETTINGS = {
     storePhone: '(11) 4002-8922',
     storeAddress: 'Rua Augusta, 1234 — Consolação, São Paulo / SP',
     cnpj: '00.000.000/0001-00',
-    whatsappNumber: '5522981605315',
+    whatsappNumber: '5511999999999',
     freeShippingAt: 299,
     flatShipping: 19.90,
     pixDiscountPercent: 10,

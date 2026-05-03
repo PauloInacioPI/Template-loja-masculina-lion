@@ -35,7 +35,7 @@ const initialForm = {
 export default function CheckoutModal() {
   const { checkoutOpen, closeCheckout, cart, subtotal, clearCart } = useStore()
   const { config } = useSiteConfig()
-  const WHATS_NUMBER     = config.general?.whatsappNumber  || '5522981605315'
+  const WHATS_NUMBER     = config.general?.whatsappNumber  || '5511999999999'
   const FREE_SHIPPING_AT = Number(config.general?.freeShippingAt ?? 299)
   const FLAT_SHIPPING    = Number(config.general?.flatShipping   ?? 19.90)
   const PIX_PCT          = Number(config.general?.pixDiscountPercent ?? 10) / 100
