@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"C:\\\\Users\\\\PiTech\\\\Downloads\\\\Lion Modas\\\\public\\\\lion-logo.png\"\\); \"$\\($img.Width\\)x$\\($img.Height\\) - Format: $\\($img.PixelFormat\\)\"; $img.Dispose\\(\\))",
+      "PowerShell(mysql --version)",
+      "Bash(curl -s http://localhost:3001/)",
+      "Bash(curl -s http://localhost:3001/health)",
+      "Bash(curl -s http://localhost:3001/api/products)",
+      "Bash(python -c \"import sys, json; data = json.load\\(sys.stdin\\); print\\(f'Total produtos: {len\\(data\\)}'\\); print\\('Primeiro:'\\); print\\(json.dumps\\(data[0], indent=2, ensure_ascii=False\\)\\)\")",
+      "PowerShell(Get-Process -Name node -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 3001 -State Listen -ErrorAction SilentlyContinue)",
+      "PowerShell(\"---\")",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

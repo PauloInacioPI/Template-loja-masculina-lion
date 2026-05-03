@@ -1,0 +1,30 @@
+# Dependências
+node_modules/
+
+# Builds
+dist/
+dist-ssr/
+.vite/
+
+# Variáveis de ambiente (segredos)
+.env
+.env.local
+.env.production
+
+# Uploads do backend (mantém só a pasta)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Imagens enviadas pelo usuário durante uso
+ChatGPT*.png
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.local
+
+# Logs
+*.log
+npm-debug.log*
