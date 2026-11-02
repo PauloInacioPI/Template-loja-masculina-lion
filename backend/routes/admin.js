@@ -561,7 +561,7 @@ router.put('/settings/:key', async (req, res, next) => {
     if (value === undefined) throw httpError(400, 'value obrigatório')
     await pool.query(
       `INSERT INTO site_settings (\`key\`, \`value\`)
-       VALUES (?, CAST(? AS JSON))
+       VALUES (?, ?)
        ON DUPLICATE KEY UPDATE \`value\` = VALUES(\`value\`)`,
       [req.params.key, JSON.stringify(value)]
     )

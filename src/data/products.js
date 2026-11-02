@@ -43,10 +43,10 @@ export const SHOE_SIZES = ['38', '39', '40', '41', '42', '43', '44']
 export const BRANDS = ['LION', 'LION x KAOS', 'CREW', 'STREETLAB']
 
 export const instagramPhotos = [
-  'https://images.unsplash.com/photo-1517593456449-1cf91d048da6?w=400&q=80&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400&q=80&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=400&q=80&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1488161628813-04466f872be2?w=400&q=80&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?w=400&q=80&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1492288991661-058aa541ff43?w=400&q=80&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1496346903040-c1de8d09f404?w=400&q=80&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&q=80&auto=format&fit=crop',
 ]

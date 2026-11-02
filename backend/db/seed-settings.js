@@ -71,12 +71,12 @@ const SETTINGS = {
     { icon: 'CreditCard',  title: '10X SEM JUROS',  sub: 'ou 10% OFF no PIX' },
   ],
   instagram: [
-    'https://images.unsplash.com/photo-1517593456449-1cf91d048da6?w=400&q=80&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400&q=80&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=400&q=80&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1488161628813-04466f872be2?w=400&q=80&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?w=400&q=80&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1492288991661-058aa541ff43?w=400&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1496346903040-c1de8d09f404?w=400&q=80&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&q=80&auto=format&fit=crop',
   ],
   footer: {
     bio: 'Streetwear autêntico, feito por quem vive a cultura urbana. Desde 2019.',
@@ -91,7 +91,7 @@ async function run() {
   for (const [key, value] of Object.entries(SETTINGS)) {
     await pool.query(
       `INSERT INTO site_settings (\`key\`, \`value\`)
-       VALUES (?, CAST(? AS JSON))
+       VALUES (?, ?)
        ON DUPLICATE KEY UPDATE \`value\` = VALUES(\`value\`)`,
       [key, JSON.stringify(value)]
     )

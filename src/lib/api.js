@@ -9,7 +9,10 @@
 //    componentes do front já esperam (sem precisar reescrever cada um)
 // =====================================================================
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+// ?? em vez de || : assim VITE_API_URL='' (vazio) e preservado e as chamadas
+// ficam relativas (/api/...), servidas pelo proxy do nginx na mesma origem.
+// Sem isso, string vazia cairia no fallback de localhost e quebraria em producao.
+const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:3001'
 
 /**
  * Wrapper genérico de fetch — joga erro se status não for 2xx.

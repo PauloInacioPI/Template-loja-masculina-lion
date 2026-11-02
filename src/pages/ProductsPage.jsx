@@ -89,7 +89,10 @@ export default function ProductsPage() {
       default: break
     }
     return list
-  }, [filters, sort])
+    // ALL precisa estar aqui: o hook começa com [] e só depois preenche via
+    // fetch. Sem essa dependência o memo congela na lista vazia do 1º render
+    // e a página fica em "Nenhum produto encontrado" para sempre.
+  }, [ALL, filters, sort])
 
   const totalActive =
     filters.tipo.length + filters.genero.length + filters.cor.length +
